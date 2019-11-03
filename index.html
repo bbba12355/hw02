@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的網頁</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Main css -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 網頁抬頭選單 -->
+    <header>
+        <nav class="navbar navbar-dark fixed-top  navbar-expand-md" style="background-color: #000000;">
+            <div class="container">
+                <!-- LOGO -->
+                <a href="#" class="navbar-brand">
+                    <img src="images/One-Ok-Roclogo.png" alt="logo" width="60"/>
+                </a>
+                <!-- 手機選單漢堡按鈕 -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+          <!-- 漢堡ICON -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <!-- 選單內容 -->
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a href="#product" class="nav-link">樂團</a></li>
+                        <li><a href="#video" class="nav-link">歌曲</a></li>
+                        <li><a href="#creative" class="nav-link">專輯</a></li>
+                        <li><a href="#interduce" class="nav-link">介紹</a></li>
+                        <li><a href="#activity" class="nav-link">活動</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 可以輪播的Banner圖片 -->
+    <section id="product">
+        <div id="carousel-controller" class="carousel slide" data-ride="carousel">
+            <!-- 輪播圖片 -->
+            <div class="carousel-inner">
+                <!-- 圖片1 -->
+                <br><br><br>
+                <div class="carousel-item active">
+                    <a href="https://www.youtube.com/user/ONEOKROCKchannel">
+                    <img class="w-100" src="images/one_ok_rock_2.jpg" alt=""width="80%"></a>
+                    <div class="carousel-caption">
+                        <h1>ONE OK ROCK</h1>
+                    </div>
+                </div>
+                <!-- 圖片2 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="images/one_ok_rock_5.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>JAPAN TOUR</h1>
+                    </div>
+                </div>
+                <!-- 圖片3 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="images/one_ok_rock_4.jpg" alt="">
+                    <div class="carousel-caption">
+                   
+                    </div>
+                </div>
+            </div>
+            <!-- 圖片上一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <!-- 圖片下一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="next" class=" carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+            <!-- 下方點點 -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-controller" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-controller" data-slide-to="1"></li>
+                <li data-target="#carousel-controller" data-slide-to="2"></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- 影片 -->
+    <section class="container-fluid video-area" id="video">
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IGInsosP0Ac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- 產品介紹區塊(創意) -->
+    <section id="creative" class="creative_area">
+        <div class="container">
+            <h2 class="text-center">
+                歷年專輯
+            </h2>
+            <!-- 產品照片 -->
+            <div class="row">
+                <!-- 照片組1 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="https://open.spotify.com/album/0p1YL9nzIuKTonZH6Gq58i?autoplay=true&v=L"><img alt="AMBITIONS" src="images/ambitions.jpg" >
+                            <div class="card-title-wrap">
+                                <span class="card-title">AMBITIONS</span>
+                                <span class="card-text">2017/1/11</span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4>前往試聽。</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 照片組2 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="https://open.spotify.com/album/1obI3635eoYwWYhGs2vEeP?autoplay=true&v=L"><img alt="EYE OF THE STORM" src="images/eye of the storm.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">EYE OF THE STORM</span>
+                                <span class="card-text">2019/2/13</span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4>前往試聽。</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 照片組3 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="https://open.spotify.com/album/5yyxuxoqWqmYIJcORvvnpL?autoplay=true&v=L">
+                            <img alt="35xxxv" src="images/35xxxv.jpg" >
+                            <div class="card-title-wrap">
+                                <span class="card-title">35xxxv</span>
+                                <span class="card-text">2015/2/11</span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4>前往試聽。</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 商品文案 -->
+    <section id="interduce">
+        <div class="container">
+            <div class="row">
+                <div class="article_text">
+                    <br><br>
+                    <h3>ONE OK ROCK</h3>
+                    <p>one o'clock</h3>
+                        這不是氣候變異</br>
+                        這是樂壇狂熱再起</br>
+                        Rock Sound評選最佳國際樂團、最佳現場表演
+                    </p>
+                    <h3>最新英文專輯</h3>
+                    <p>《暴風眼 Eyes of the Storm》</br>
+                        02.15全球上線</br>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 背景影片 -->
+        <div class="container">
+            <video autoplay muted loop id="myVideo">
+        <source src="video/ONE OK ROCK Let's take it someday (LIVE MIX) KOO.mp4" type="video/mp4">
+      </video>
+        </div>
+    </section>
+
+    <!-- 商品促銷活動區塊 -->
+    <section id="activity" class="activity_area">
+     <div class="container">
+            <div class="col">
+                    <div class="card">
+                        <a href="https://zh.wikipedia.org/wiki/ONE_OK_ROCK"><img alt="EYE OF THE STORM" src="images/one-ok-rock.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title"></span>
+                                <span class="card-text"></span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4> </h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    </section>
+    <!-- 規格 -->
+    
+
+    <!-- 貼心提醒 -->
+    
+    <!-- 頁腳 -->
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 footer_logo">
+                    <img src="images/One-Ok-Roclogo_black.png">
+                </div>
+                <div class="col-md-4 col-sm-12 footer_address">
+                    <ul>
+                        <li>專 線：04-58889478</li>
+                        <li>服務時間：週一至週五 9:00 ~ 18:00</li>
+                        <li>服務信箱：oneokrock@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer_copyright justify-content-center">
+                <p>COPYRIGHT © 2019 one ok rock .ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+
+    <script src="js/back_top.js"></script>
+</body>
+
+</html>
